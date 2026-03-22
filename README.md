@@ -27,3 +27,29 @@ eval_lstm.py
 eval_transformer_pipeline.py
 функция evaluate_transformer реализует генерацию текстов с помощью модели 'distilgpt2' по алгоритму как и evaluate_lstm
 метрики rouge здесь рассчитываю штатным методом из библиотеки evaluate
+
+
+ВЫВОДЫ:
+Судя по метрикам немного лидирует LSTM модель
+По наглядным примерам на последних эпохах обучения LSTM модель начинает предсказывать более точно. Даже в малой выборке примеров попадаются точные предсказания:
+--- Пример 8 из 2 эпохи---
+Вход: its that whole roid thing that makes *** me cringe
+Предсказание: its that whole roid thing that makes *** me smile at work
+
+--- Пример 7 из 7 эпохи ---
+Вход: mission statement or something like that psyk *** ##oidcom
+Предсказание: mission statement or something like that psyk *** ##oidcom
+
+--- Пример 4 из 8 эпохи ---
+Вход: its gone morning how are *** you today
+Предсказание: its gone morning how are *** you doing
+
+--- Пример 8 из 8 эпохи ---
+Вход: i cud never buy those toys somehow my dad thought it was a wastehe used *** to get me robots and cars
+Предсказание: i cud never buy those toys somehow my dad thought it was a wastehe used *** to play
+
+--- Пример 5 из 10 эпохи ---
+Вход: i still dont want to go *** to school
+Предсказание: i still dont want to go *** back to work
+
+До идеального предсказания обеим моделям еще очень далеко 
