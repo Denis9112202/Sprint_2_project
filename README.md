@@ -31,7 +31,33 @@ eval_transformer_pipeline.py
 
 ВЫВОДЫ:
 Судя по метрикам да и по наглядным примерам немного лидирует модель 'distilgpt2' 
-Но по наглядным примерам на последних эпохах обучения LSTM модель начинает предсказывать более точно. Даже в малой выборке примеров попадаются точные предсказания:
+Для LSTM:
+Epoch [1/10], TrainLoss: 5.1616
+rouge1: 0.0306 rouge2: 0.0025 rougeL: 0.0306
+Epoch [2/10], TrainLoss: 4.7214
+rouge1: 0.0406 rouge2: 0.0042 rougeL: 0.0406
+Epoch [3/10], TrainLoss: 4.6088
+rouge1: 0.0379 rouge2: 0.0019 rougeL: 0.0378
+Epoch [4/10], TrainLoss: 4.5458
+rouge1: 0.0392 rouge2: 0.0030 rougeL: 0.0390
+Epoch [5/10], TrainLoss: 4.5034
+rouge1: 0.0403 rouge2: 0.0038 rougeL: 0.0402
+Epoch [6/10], TrainLoss: 4.4722
+rouge1: 0.0400 rouge2: 0.0037 rougeL: 0.0399
+Epoch [7/10], TrainLoss: 4.4478
+rouge1: 0.0411 rouge2: 0.0037 rougeL: 0.0411
+Epoch [8/10], TrainLoss: 4.4281
+rouge1: 0.0400 rouge2: 0.0027 rougeL: 0.0399
+Epoch [9/10], TrainLoss: 4.4117
+rouge1: 0.0437 rouge2: 0.0050 rougeL: 0.0436
+Epoch [10/10], TrainLoss: 4.3978
+rouge1: 0.0397 rouge2: 0.0035 rougeL: 0.0397
+
+Для 'distilgpt2': 
+rouge1: 0.0536 rouge2: 0.0048 rougeL: 0.0504
+rougeLsum: 0.0505
+
+Но по наглядным примерам на последних эпохах обучения LSTM модель начинает предсказывать более точно по сравнению с превыми эпохами. Даже в малой выборке примеров попадаются точные предсказания:
 --- Пример 8 из 2 эпохи---
 Вход: its that whole roid thing that makes *** me cringe
 Предсказание: its that whole roid thing that makes *** me smile at work
