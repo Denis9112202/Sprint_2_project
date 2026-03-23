@@ -1,0 +1,4 @@
+Добрый день, Артем!
+README.md пополнил метриками
+next_token_dataset.py формирование Target у меня реализовано в кастомной функции collate_fn в lstm_train.py параметр 'labels'
+lstm_model.py исправил
